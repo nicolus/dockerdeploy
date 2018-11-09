@@ -1,4 +1,4 @@
-FROM php:7-alpine3.7
+FROM php:7.2-alpine3.8
 
 RUN apk add --no-cache rsync openssh nodejs nodejs-npm curl
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
