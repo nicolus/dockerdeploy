@@ -5,6 +5,6 @@ RUN apk update && \
     apk add --no-cache rsync openssh curl git && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
     composer global require hirak/prestissimo &&\
-    composer global require laravel/envoy:dev-master#7582ba3 --no-progress --no-suggest && \
+    composer global require laravel/envoy --no-progress --no-suggest && \
     rm -rf /root/.composer/cache/*
 
