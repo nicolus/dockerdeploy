@@ -6,6 +6,6 @@ RUN apk update && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
     composer global require hirak/prestissimo &&\
     composer global require laravel/envoy --no-progress --no-suggest && \
-    composer global require deployer/deployer --no-progress --no-suggest && \
+    composer global require deployer/deployer:dev-master#7582ba3 --no-progress --no-suggest && \
     rm -rf /root/.composer/cache/*
 
